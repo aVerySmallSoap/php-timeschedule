@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/output.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="inner-container">
+            <div class="heading">
+                <span id="title">Time Schedule Form</span>
+            </div>
+            <div class="body">
+                <form id="form">
+                    <div class="form-row">
+                        <label for="date-input1">Time in: </label>
+                        <input type="time" id="date-input1">
+                    </div>
+                    <div class="form-row">
+                        <label for="date-input2">Time out: </label>
+                        <input type="time" id="date-input2">
+                    </div>
+                    <div class="control-flow">
+                        <button class="btn">Calculate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <template id="output-temp">
+        <div class="out-container">
+            <div class="out-body">
+                <span>Time in:</span>
+                <span class="output" id="in">&nbsp;</span>
+                <span>Time-in formatted:</span>
+                <span class="output" id="in-f">&nbsp;</span>
+                <span>Time out:</span>
+                <span class="output" id="in2">&nbsp;</span>
+                <span>Time-out formatted:</span>
+                <span class="output" id="in2-f">&nbsp;</span>
+                <span>Number of hours:</span>
+                <span class="output" id="hours">&nbsp;</span>
+                <span>Number of minutes:</span>
+                <span class="output" id="minutes">&nbsp;</span>
+            </div>
+            <button id="close-out">X</button>
+        </div>
+    </template>
+
+    <script src="/JS/index.js"></script>
+
+</body>
+</html>

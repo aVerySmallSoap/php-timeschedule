@@ -1,0 +1,47 @@
+@keyframes delay {
+    from{
+        opacity: 0;
+        top: -25px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.break{
+    max-height: 0;
+}
+
+.out-container{
+    display: flex;
+    position: relative;
+    flex: 1 0 100%;
+    justify-content: center;
+    margin: 20px 25px 0 25px;
+    background: palegreen;
+    border-radius: 25px;
+}
+
+.out-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.out-body span{
+    padding: 6px;
+}
+
+.output{
+    position: relative;
+    justify-self: center;
+    transition: 500ms ease-in;
+}
+
+#close-out{
+    position: relative;
+    left: 1.2vw;
+    max-height: 20px;
+    background: transparent;
+    border: none;
+}

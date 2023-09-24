@@ -1,0 +1,159 @@
+@keyframes error {
+    from{
+        opacity: 0;
+        margin-right: -25px;
+    }
+    to{
+        opacity: 1;
+        margin-right: 25px;
+    }
+}
+
+@keyframes error-out {
+    from{
+        opacity: 1;
+        margin-right: 25px;
+    }
+    to{
+        opacity: 0;
+        margin-top: -25px;
+    }
+}
+
+@keyframes extend {
+    from{
+        height: 25vh;
+    }
+    to{
+        height: 55vh;
+    }
+}
+
+@keyframes slide-in {
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes drop-in {
+    from{
+        opacity: 0;
+        top: -25px;
+    }
+    to{
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes retract {
+    from{
+        height: 55vh;
+    }
+    to{
+        height: 25vh;
+    }
+}
+
+@keyframes slide-out {
+    from{
+        width: 90%;
+    }
+    to{
+        width: 0;
+    }
+}
+
+@keyframes push-up {
+    from{
+        opacity: 1;
+        top: 0;
+    }
+    to{
+        opacity: 0;
+        top: -25px;
+    }
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../misc/fonts/Inter-Regular.otf");
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20% 60% 20%;
+    height: 100%;
+    background-color: #272829;
+}
+
+.container{
+    display: flex;
+    border: none;
+    border-radius: 25px;
+    box-shadow: -1px 2px 3px 1px rgba(0,0,0,40%);
+    width: 30vw;
+    height: 25vh;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: white;
+}
+
+.inner-container{
+    flex-wrap: wrap;
+    flex: 1 0 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.heading{
+    flex: 1 0 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.body{
+    flex: 1 0 100%;
+}
+
+.form-row{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    flex: 1 0 100%;
+    margin: 2vh 0 2vh 0;
+}
+
+.form-row label{
+    text-align: center;
+}
+
+.form-row input{
+    text-align: center;
+    max-width: 20vw;
+    padding: 2px;
+    border-radius: 8px;
+    border: 1px solid;
+    outline: none;
+}
+
+.control-flow{
+    display: flex;
+    justify-content: end;
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 25px;
+}
