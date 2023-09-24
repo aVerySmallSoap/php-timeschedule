@@ -109,6 +109,7 @@ function throwError(){
     message.style.marginRight = "25px";
     message.style.animation = "2s error";
     message.innerText = "Please fill out the required fields!";
+    setTimeout(() => message.style.animation = "", 2000);
     document.querySelector(".control-flow").prepend(message);
 }
 
